@@ -1,5 +1,5 @@
-VERSION=1.0.0
-ARCHIVE=v$(VERSION).zip
+VERSION=master
+ARCHIVE=$(VERSION).zip
 SRCDIR=cgreen-$(VERSION)
 PAYLOADDIR=payload
 
@@ -22,4 +22,4 @@ sources:
 	cd $(SRCDIR); make
 
 clean:
-	rm -rf build $(PAYLOADDIR) $(SRCDIR) v*.zip* v*.tgz*
+	rm -rf build $(PAYLOADDIR) $(SRCDIR) *.zip* *.tgz* payload build cgreen-$(VERSION) *~
