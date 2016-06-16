@@ -1,11 +1,11 @@
-VERSION=master
+VERSION=1.0.0
 ARCHIVE=$(VERSION).zip
 SRCDIR=cgreen-$(VERSION)
 PAYLOADDIR=payload
 
 all: binaries
 	packagesbuild cgreen.pkgproj
-	mv build/Cgreen.pkg build/cgreen-$(VERSION).pkg
+	mv build/Cgreen.pkg build/cgreen-$(VERSION).macosx.pkg
 
 .PHONY: binaries
 binaries: $(PAYLOADDIR) sources
